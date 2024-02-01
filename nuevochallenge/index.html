@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Encriptador new</title>
+</head>
+<body>
+    <div class="caja_de_contenido">
+
+        <div class="lado_izquierdo">
+            <div class="caja_de_img">
+             <img src="img/Logo.png" alt="Una transcripcion">
+            </div>
+        
+            <div class="caja_de_titulo">
+                <h1>Encriptador 2024</h1>
+            </div>
+            
+            <div class="caja_de_textarea">
+                <textarea class="mensaje" id="textarea1" rows="5" placeholder="Ingrese su texto a encriptar aqui"></textarea>
+            </div>
+            
+            <div class="caja_de_parrafo">
+                <p>Su texto debe estar en minusculas y sin acentos</p>
+            </div>
+            
+            <div class="Botones">
+                <button class="Encriptar" id="boton1" onclick="encriptar()">Encriptar</button>
+                <button class="Desencriptar" id="boton2" onclick="desencriptar()">Desencriptar</button>
+                <button class="eliminar" id="boton3" onclick="borrarTodo()">Borrar textos</button>
+
+            </div>           
+        </div>
+
+        <div class="lado_derecho">
+            <textarea class="mensaje" id="textarea2" cols="15" rows="10" placeholder="Aqui tendra su texto encriptado/desencriptado"></textarea>
+            <img class="imagen_izquierda" src="img/descarga (2).jpg" alt="">
+            <button class="boton_de_copiar" id="copiar_texto" onclick="copiar()">Copiar texto</button>
+        </div>      
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
